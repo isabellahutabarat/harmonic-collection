@@ -1,0 +1,13 @@
+body {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'courier', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: top;
+    align-items: top;
+    background: radial-gradient(circle, #ffd6cb, #ffefd8, #ffd8ca );
+    position: relative;
+  }
+
+  

@@ -1,0 +1,85 @@
+body, html {
+    margin: 10;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background: #ff6f00;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1500px; 
+}
+
+.dela-gothic-one-regular {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+.container {
+    transform: rotateY(-45deg) translateZ(0) scale(1);
+    transform-origin: right top;
+    transform-style: preserve-3d;
+    will-change: transform;
+    padding-right: 50px;
+    margin-right: 50px;
+    position: relative;
+}
+
+
+.songs p {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #0b0b0b;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    margin: 20px 0;
+    line-height: 1;
+    text-align: right;
+    transform: rotateX(10deg) rotateY(10deg); /* 3d effect */
+    animation: flyDown 1s ease-in-out forwards;
+}
+
+
+.songs p:hover {
+    color: white;
+    transform: rotateX(0deg) rotateY(0deg) scale(1.2);
+    transition: color 0s, transform 0.5s ease-in-out; /* Immediate color change */
+
+}
+
+.song-link {
+    transform: none;
+    position: relative;
+}
+
+
+.spotify-widget {
+    display: none; 
+    position: absolute;
+    top: 10%;
+    left: -350px; 
+    width: 500px;
+    height: 550px;
+    z-index: 20;
+    transform: none;
+    transform-style: flat;
+    perspective: none;
+}
+
+.song-link:hover .spotify-widget {
+    display: block; 
+}
+
+
+@keyframes flyDown {
+    0% {
+        transform: translateY(-100%) rotateX(10deg) rotateY(10deg); /* start above screen */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) rotateX(10deg) rotateY(10deg); /* stops normal pos */
+        opacity: 1;
+    }
+}
+

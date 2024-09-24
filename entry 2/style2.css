@@ -1,0 +1,109 @@
+body {
+  margin: 70px;
+  padding: 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #ff7e5f, #fcd08e, #f8a488 );
+  position: relative;
+}
+
+.playlist-title {
+  font-size: 10em;
+  font-weight: 400;
+  margin-top: 700px;
+  text-align: left;
+  color: #333;
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+}
+
+.courier-prime-regular-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.circle-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid #333;
+  animation: spin 10s linear infinite;
+}
+
+.note {
+  position: absolute;
+  font-size: 2em;
+  color: #333;
+}
+
+.note:nth-child(1) { top: 10%; left: 50%; transform: translate(-50%, -50%); }
+.note:nth-child(2) { top: 30%; right: 10%; transform: translate(50%, -50%); }
+.note:nth-child(3) { bottom: 30%; right: 10%; transform: translate(50%, 50%); }
+.note:nth-child(4) { bottom: 10%; left: 50%; transform: translate(-50%, 50%); }
+.note:nth-child(5) { bottom: 30%; left: 10%; transform: translate(-50%, 50%); }
+.note:nth-child(6) { top: 30%; left: 10%; transform: translate(-50%, -50%); }
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.song-title {
+  position: absolute;
+  font-size: 0.7em; 
+  color: #333;
+  cursor: pointer;
+}
+
+.song-title a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+#song1 {top: 10%; left: 5%;}
+#song2 { top: 20%; right: 10%;}
+#song3 {top: 30%; left: 20%;}
+#song4 {top: 40%; right: 5%;}
+#song5 {top: 50%; left: 30%;}
+#song6 {top: 60%; right: 20%;}
+#song7 {top: 70%; left: 10%;}
+#song8 {top: 15%; right: 25%;}
+#song9 {top: 20%; left: 35%;}
+#song10 {bottom: 30%; right: 5%;}
+#song11 {bottom: 40%;left: 15%;}
+#song12 {bottom: 50%;right: 25%;}
+#song13 {bottom: 60%; left: 5%;}
+#song14 {bottom: 70%; right: 10%;}
+#song15 {bottom: 80%; left: 20%;}
+
+.spotify-embed {
+  display: none;
+}
+
+.song-title:hover .spotify-embed {
+  display: -webkit-box;
+  position: relative;
+  top: 100%; 
+  left: 0;
+}
