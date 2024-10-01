@@ -47,7 +47,7 @@
       top: 0;
       margin: 0;
       overflow: hidden;
-      background: #fff;
+      background: #f2efed;
       color: #000;
       font-size: 18px;
       font-family: 'Plus Jakarta Sans', sans-serif;
@@ -114,7 +114,7 @@
     /* RECORDS RIGHT */
     .record--issue .spine,
     .record--issue .page--cover {
-      background: #ff9d00;
+      background: #ff8e4d;
     }
 
     .record--issue .blinker--live {
@@ -174,7 +174,7 @@
 
     /* HOME PAGE */
     .page--home {
-      background: #ffffff;
+      background: #f2efed;
       position: absolute;
       top: 0;
       width: calc(100vw - 72px);
