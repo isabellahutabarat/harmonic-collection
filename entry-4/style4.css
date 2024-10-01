@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #202124;
+    color: #F0F0F0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header {
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: #E94560;
+    text-transform: uppercase;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  .playlist-intro p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #B0BEC5;
+  }
+  
+  .spotify-widget {
+    margin: 30px 0;
+  }
+  
+  .playlist-visual {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+  }
+  
+  .circle-animation {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .circle-outer {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #E94560;
+    border-radius: 50%;
+    animation: spin 10s infinite linear;
+  }
+  
+  .circle-inner {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #A4B3B6;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin-reverse 8s infinite linear;
+  }
+  
+  .playlist-description {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #B0BEC5;
+    max-width: 500px;
+  }
+  
+  footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin-reverse {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
