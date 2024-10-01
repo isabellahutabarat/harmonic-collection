@@ -202,28 +202,42 @@
       border-right: 1px solid black;
     }
 
-    /* SPINE CONTENT */
+    /* INFO SPINE CONTENT */
     .spine--content {
       display: none; 
       background: white;
-      padding: 10px; 
-      position: absolute;
-      top: 0;
-      right: 110%; 
-      width: 200px; 
+      padding: 40px; 
+      position: relative;
+      top: 30px;
+      left: 10%; 
+      width: 400px; 
       border: 1px solid black; 
       transition: all 0.5s ease; 
       z-index: 2; 
+      text-align: left;
+      margin: 50px;
     }
 
     .spine:hover .spine--content {
       display: block; 
-      transform: translateX(-100%); 
+      transform: translateX(100%); 
     }
 
     .spine:hover {
-      transform: translateX(-20px); 
+      transform: translateX(20px); 
     }
+
+/* Hover effect for right-side spines */
+.right-spine .spine:hover .spine--content {
+  display: block;
+  transform: translateX(-100%);
+}
+
+.right-spine .spine:hover {
+  transform: translateX(-20px);
+}
+
+
 
     @media only screen and (max-width: 1300px), (min-width: 1300px) and (max-height: 850px) {
       .smallText, .spine .smallText {
