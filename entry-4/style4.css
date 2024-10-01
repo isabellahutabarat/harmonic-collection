@@ -21,7 +21,7 @@
       margin: 0;
     }
 
-    .text p, .current {
+    .text p {
       font-size: 2.5vh;
       line-height: 3vh;
       margin: 0;
@@ -85,7 +85,7 @@
       writing-mode: vertical-rl;
     }
 
-    .spine--blinker {
+    .spine--middle {
       position: absolute;
       top: 50%;
       text-orientation: mixed;
@@ -128,7 +128,7 @@
 
     .record--playlists .spine--title--top,
     .record--playlists .spine--title--bottom,
-    .record--playlists .spine--blinker {
+    .record--playlists .spine--middle {
       right: 17px;
       text-orientation: mixed;
       writing-mode: vertical-rl;
@@ -141,7 +141,7 @@
 
     .record--spotify-codes .spine--title--top,
     .record--spotify-codes .spine--title--bottom,
-    .record--spotify-codes .spine--blinker {
+    .record--spotify-codes .spine--middle {
       color: white; 
     }
 
@@ -200,7 +200,6 @@
     .info--spine {
       position: absolute;
       border-right: 1px solid black;
-      top: 17px;
     }
 
     /* SPINE CONTENT */
@@ -232,7 +231,7 @@
         line-height: 15px;
       }
 
-      .mainText, .text p, .current {
+      .mainText, .text p {
         font-size: 20px;
         line-height: 24px;
       }
@@ -259,7 +258,7 @@
       }
 
       /* SPINE */
-      .spine--blinker {
+      .spine--middle {
         top: 45vh;
       }
 
@@ -268,7 +267,7 @@
       }
 
       .spine--title--bottom,
-      .spine--blinker,
+      .spine--middle,
       .spine--title--top {
         right: 12px;
       }
@@ -277,7 +276,7 @@
         top: 50px;
       }
 
-      .spine--blinker {
+      .spine--middle {
         right: 11px;
       }
 
