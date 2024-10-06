@@ -5,13 +5,21 @@
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    width: 8px; 
 }
 
+::-webkit-scrollbar-thumb {
+    background-color: #FE0; 
+    border-radius: 4px; 
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
 
 body {
     margin: 0;
-    overflow-x: hidden; /* Ensure no horizontal scroll for the body */
+    overflow-x: hidden; 
 }
 
 /* text styling */
@@ -23,7 +31,7 @@ body {
 }
 
 .smallText {
-    position: relative; /* Position elements relative to the header-box */
+    position: relative; 
     color: #000;
     font-family: "Plus Jakarta Sans";
     font-size: 1vw;
@@ -40,6 +48,16 @@ body {
     position: absolute;
 }
 
+.songText {
+    color: #000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 4vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.64px; 
+}
+
 /* Responsive text sizes */
 .playlist-title {
     position: relative;
@@ -52,7 +70,7 @@ body {
 .title-left {
     top: 2%;
     left: 4%;
-    font-size: 8vw;  /* Responsive font size based on viewport width */
+    font-size: 8vw; 
 }
 
 .title-middle {
@@ -70,25 +88,25 @@ body {
 
 /*header styling*/
 .header-box {
-    position: relative; /* Make the container the reference point */
+    position: relative; 
     width: 100vw;
     height: 15vh;
     background: #FFF;
-    display: flex; /* Use flexbox */
-    justify-content: space-between; /* Space between left and right */
-    align-items: center; /* Center items vertically */
-    padding: 0 5vw; /* Add some padding for spacing */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 5vw; 
 }
 
 .leftText {
-    display: flex; /* Ensure it’s a flex container to handle children */
-    align-items: center; /* Center text vertically */
+    display: flex; 
+    align-items: center; 
 }
 
 .rightText {
-    display: flex; /* Ensure it’s a flex container to handle children */
+    display: flex; 
     gap: 1.04vw; 
-    align-items: center;/* Add spacing between right texts */
+    align-items: center;
 }
 
 /* photo styling */
@@ -98,8 +116,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     position: relative;
-    overflow-y: auto; /* Enable vertical scrolling */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; 
+    overflow-x: hidden; 
 }
 
 .background-photo {
@@ -111,5 +129,4 @@ body {
     background: url(/Users/isabella/Desktop/interaction/GitHub/harmonic-collection/entry-5/faustino-front-page.png) center / cover no-repeat;
     margin: 0;
 }
-
 
