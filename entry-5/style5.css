@@ -220,8 +220,8 @@ body {
     position: relative;
     width: 100vw;
     height: 85.92vh; 
-    background: url(assets/faustino-front-page.png) center / cover no-repeat;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 
 }
