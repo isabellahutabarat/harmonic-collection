@@ -68,6 +68,29 @@ body {
     letter-spacing: 0.44px;
 }
 
+/*header styling*/
+.header-box {
+    position: relative; 
+    width: 100vw;
+    height: 15vh;
+    background: #FFF;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 5vw; 
+}
+
+.leftText {
+    display: flex; 
+    align-items: center; 
+}
+
+.rightText {
+    display: flex; 
+    gap: 1.04vw; 
+    align-items: center;
+}
+
 /* Responsive text sizes */
 .playlist-title {
     position: relative;
@@ -180,30 +203,6 @@ body {
 }
 
 
-
-/*header styling*/
-.header-box {
-    position: relative; 
-    width: 100vw;
-    height: 15vh;
-    background: #FFF;
-    display: flex; 
-    justify-content: space-between;
-    align-items: center; 
-    padding: 0 5vw; 
-}
-
-.leftText {
-    display: flex; 
-    align-items: center; 
-}
-
-.rightText {
-    display: flex; 
-    gap: 1.04vw; 
-    align-items: center;
-}
-
 /* photo styling */
 .page-home {
     background-color: #ededed;
@@ -223,5 +222,4 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-
 }
