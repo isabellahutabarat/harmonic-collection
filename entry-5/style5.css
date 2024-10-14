@@ -83,6 +83,7 @@ body {
 .leftText {
     display: flex; 
     align-items: center; 
+    flex: 1;
 }
 
 .rightText {
@@ -129,6 +130,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     padding: 5vw; 
+    z-index: 1;
 }
 
 /*playlist header styling inside yellow box*/
@@ -221,4 +223,104 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+.illustration-interview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 7vh;
+    padding: 0 5vw;
+    gap: 3vw;
+}
+
+.faustino-drawing {
+    width: 40%;
+    object-fit: contain;
+    transform: rotate(-24.082deg);
+    z-index: 0;
+}
+
+.q-3 {
+    width: 45%;
+    object-fit: contain;
+    margin-top: -15vh;
+    margin-left: 7vw;
+}
+
+.stacked-images {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40vh;
+}
+
+.q-4 {
+    position: absolute;
+    width: 45%;
+    top: -20vh;
+    left: 40vw;
+}
+
+.q-6 {
+    position: absolute;
+    width: 45%;
+    top: 10vh;
+    left: 15vw;
+    object-fit: contain;
+}
+
+/*bottom text*/
+
+.int-text {
+    color: #FE0;
+    font-family: "Plus Jakarta Sans";
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.92px;
+}
+
+
+.text-container {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+.full-width {
+    display: flex;
+    justify-content: space space-between; 
+    width: 100%; /* Ensures it spans the entire width */
+}
+
+.word {
+    text-align: left;
+    flex: 0 1 auto;
+}
+
+.left {
+    flex: 0 1 auto; /* Makes sure the first word stays at the start */
+}
+
+.right {
+    flex: 0 1 auto; /* Makes sure the last word stays at the end */
+}
+
+.middle {
+    flex: 1; /* These words will stretch to fill the remaining space */
+    text-align: center;
+    margin: 0 2vw; /* Adjust this margin to control space between the middle words */
 }
