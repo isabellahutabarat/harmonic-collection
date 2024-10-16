@@ -63,49 +63,138 @@ body {
 }
 
 
-/* Container for image and grid */
+/*img containter*/
 .image-container {
   position: relative;
   width: 100vw;
-  height: 83vh; /* Set the height to 80vh */
-  overflow: hidden; /* Prevent overflow */
+  height: 78.8vh; 
 }
 
-/* Background image styling */
+/* bkg image styling */
 .background-image {
   width: 100%;
   height: 100%; 
-  object-fit: cover; /* Keep the aspect ratio intact */
-  position: relative; /* Ensure it sits below the grid */
+  object-fit: cover; 
+  position: relative; 
 }
 
-/* Grid container */
+.text-overlay {
+  font-size: 200px;
+  color: black;
+  position: absolute;
+  bottom: 0; 
+  left: 5vw; 
+  padding: 0 5vw;
+  z-index: 3; 
+  pointer-events: none;
+}
+
+/* grid container */
 .image-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(72.1px, 1fr)); /* Responsive columns */
-  grid-auto-rows: 72.1px; /* Fixed row height */
-  gap: 0; /* No gaps between the grid items */
+  grid-template-columns: repeat(auto-fill, minmax(72.1px, 1fr)); 
+  grid-auto-rows: 72.1px; 
+  gap: 0; 
   width: 100%;
-  height: 100%; /* Ensure grid covers the entire height of the image */
-  position: absolute; /* Position grid on top of the image */
+  height: 100%; 
+  position: absolute; 
   top: 0;
   left: 0;
-  z-index: 2; /* Ensure grid is above the image */
+  z-index: 2;
 }
 
-/* Yellow square boxes */
+/* yellow  boxes */
 .image-grid-container div {
-  background-color: #FFEE00; /* Yellow color */
+  background-color: #FFEE00; 
   width: 100%;
   height: 100%;
+  opacity: 1; 
+  transition: opacity 0s ease; 
 }
 
-/* Remove random boxes */
 .hidden-box {
   visibility: hidden;
 }
 
-/* Media queries to adjust grid size based on screen width */
+.image-grid-container div:hover {
+  opacity: 0; 
+}
+
+
+/* bottom grid */
+.grid-bottom {
+  position: relative;
+  width: 100vw;
+  height: 35vh; 
+  overflow: hidden;
+}
+
+.grid-bottom-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72.1px, 1fr)); 
+  grid-auto-rows: 72.1px; 
+  gap: 0; 
+  width: 100%;
+  height: 100%; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+}
+
+.grid-bottom-container div {
+  background-color: #FFEE00; 
+  width: 100%;
+  height: 100%;
+  opacity: 1; 
+  transition: opacity 0s ease; 
+}
+
+.grid-bottom-container div:hover {
+  opacity: 0; 
+}
+
+/*side grid*/
+.side-grid {
+  position: relative;
+  width: 50vw;
+  height: 80vh; 
+  overflow: hidden;
+}
+
+.background-text {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  position: relative; 
+}
+
+.side-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72.1px, 1fr)); 
+  grid-auto-rows: 72.1px; 
+  gap: 0; 
+  width: 100%;
+  height: 100%; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+}
+
+.side-grid-container div {
+  background-color: #FFEE00; 
+  width: 100%;
+  height: 100%;
+  opacity: 1; 
+  transition: opacity 0s ease; 
+}
+
+.side-grid-container div:hover {
+  opacity: 0; 
+}
+
+
+
+/* media queries screen width */
 @media (max-width: 768px) {
   .image-grid-container {
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Smaller squares on smaller screens */
