@@ -20,6 +20,7 @@
   body {
     margin: 0;
     overflow-x: hidden; 
+    background-color: #FE0;
   }
   
   /* text styling */
@@ -61,3 +62,148 @@
     gap: 1.04vw; 
     align-items: center;
   }
+
+  .largeText {
+    color: #000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    transition: color 0.2s ease;
+  }
+
+  .largeText:hover {
+    color: #FFF;
+  }
+
+  .playlistText {
+    color: #000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1vw;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .nameText {
+    color: #000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    transition: color 0.2s ease;
+  }
+
+  .nameText:hover {
+    color: #FFF;
+  }
+
+  /*title container*/
+  .title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 3vw;
+  }
+
+  /*playlist section*/
+  .playlist-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 3vw;
+    padding-top: 10vh;
+  }
+
+  .name {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 3vw;
+    padding-top: 1vh;
+  }
+
+  /*below section*/
+  .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100vw;
+    height: auto;
+    padding-top: 5vh 5vw;
+    margin-top: 5vh;
+  }
+
+  .left-column,
+  .right-column {
+    flex-grow:1;
+    padding: 0 2vw;
+  }
+
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3vh;
+  }
+
+  .left-column img:nth-child(1) {
+    margin-left: 5vw;
+  }
+
+  .left-column img:nth-child(2) {
+    margin-left: 15vw;
+  }
+
+  .left-column img:nth-child(3) {
+    margin-left: 5vw;
+  }
+
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+  }
+
+  .scanned-text,
+  .diego1,
+  .diego2,
+  .diego3 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .diego1 {
+    width: 20vw;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  .diego2 {
+    width: 20vw;
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  .diego3 {
+    width: 20vw;
+    height: auto;
+    object-fit: cover;
+  }
+
+
+  /*scanned text*/
+  .scanned-text {
+    width: 40vw; 
+    mix-blend-mode: multiply; 
+    display: block;
+}
+
+
+
+
+

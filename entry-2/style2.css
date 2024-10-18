@@ -92,12 +92,12 @@ body {
 .pauline-top-photo {
   position: relative;
   width: 100vw;
-  height: 35vh; 
+  height: 40vh; 
   margin: 0;
   padding: 0;
   overflow: hidden;
-  object-fit: cover; /* Crop the image to fill the container */
-  object-position: center; /* Adjust the position of the crop */
+  object-fit: cover; 
+  object-position: center; 
 
 }
 
