@@ -21,6 +21,7 @@
     margin: 0;
     overflow-x: hidden; 
     background-color: #FE0;
+    display: block;
   }
   
   /* text styling */
@@ -35,7 +36,7 @@
     position: relative; 
     color: #000;
     font-family: "Plus Jakarta Sans";
-    font-size: 1vw;
+    font-size: 0.875rem;
     font-weight: 600;
     padding-top: 2%;
   }
@@ -66,7 +67,7 @@
   .largeText {
     color: #000;
     font-family: "Plus Jakarta Sans";
-    font-size: 10vw;
+    font-size: 10rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -80,7 +81,7 @@
   .playlistText {
     color: #000;
     font-family: "Plus Jakarta Sans";
-    font-size: 1vw;
+    font-size: 0.9375rem;
     font-weight: 500;
     line-height: normal;
   }
@@ -88,7 +89,7 @@
   .nameText {
     color: #000;
     font-family: "Plus Jakarta Sans";
-    font-size: 4vw;
+    font-size: 4.375rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -111,12 +112,19 @@
   /*playlist section*/
   .playlist-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     width: 100vw;
     padding: 0 3vw;
     padding-top: 10vh;
   }
+
+  .sec1, .sec2, .sec3, .sec4 {
+    flex: 1 1 22vw; 
+    min-width: 22vw;
+    margin-bottom: 5vh; 
+}
 
   .name {
     display: flex;
@@ -128,19 +136,20 @@
   /*below section*/
   .bottom-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     width: 100vw;
-    height: auto;
-    padding-top: 5vh 5vw;
-    margin-top: 5vh;
+    padding: 5vw 5vh;
   }
 
   .left-column,
   .right-column {
-    flex-grow:1;
+    flex-grow: 1;
     padding: 0 2vw;
+    min-width: 30vw;
   }
+
 
   .left-column {
     display: flex;
@@ -202,6 +211,42 @@
     mix-blend-mode: multiply; 
     display: block;
   }
+
+  /*media queries*/
+  @media (max-width: 768px) {
+    .playlist-container {
+        flex-direction: column;
+    }
+ 
+
+    .sec1, .sec2, .sec3, .sec4 {
+        margin-bottom: 0; 
+        margin-left: 3vw;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        min-width: 100%; /* Columns take full width on smaller screens */
+        padding: 0;
+    }
+}
+
+@media (max-width: 830px) {
+  .title-container {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .largeText {
+    font-size: 8.125rem;
+  }
+}
 
 /* Dropdown Button */
 .dropbtn {

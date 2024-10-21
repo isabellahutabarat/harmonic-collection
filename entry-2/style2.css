@@ -34,7 +34,7 @@ body {
   position: relative; 
   color: #000;
   font-family: "Plus Jakarta Sans";
-  font-size: 1vw;
+  font-size: 0.875rem;
   font-weight: 600;
   padding-top: 2%;
 }
@@ -42,7 +42,7 @@ body {
 .bigText {
   font-family: "Plus Jakarta Sans";
   font-weight: 800;
-  font-size: 6vw;
+  font-size: 6.25rem;
   color: rgb(0, 0, 0);
   line-height: normal;
   z-index: 100;
@@ -80,6 +80,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   position: relative;
   height: auto;
   padding: 0 5vw;
@@ -105,12 +106,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 100vw;
   padding: 0 5vw;
 }
 
 .q-1 {
-  width: 60vw;
   height: 32.61vh;
   object-fit: contain;
   object-position: left;
@@ -118,7 +119,6 @@ body {
 }
 
 .q-2 {
-  width: 60vw;
   height: 34.14vh;
   object-fit: contain;
   object-position: right;
@@ -149,6 +149,7 @@ body {
 .sq1, .sq2, .sq3, .sq4 {
   width: 16.41vw;
   height: 33.43vh;
+  object-fit: contain;
 }
 
 /* Dropdown Button */
