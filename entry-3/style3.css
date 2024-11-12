@@ -126,13 +126,6 @@
     margin-bottom: 5vh; 
 }
 
-  .name {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 3vw;
-    padding-top: 1vh;
-  }
-
   /*below section*/
   .bottom-section {
     display: flex;
