@@ -94,10 +94,15 @@
     font-weight: 900;
     line-height: normal;
     transition: color 0.2s ease;
+    padding: 0 3vw;
   }
 
   .nameText:hover {
     color: #FFF;
+  }
+
+  .name {
+    flex-direction: flex-end;
   }
 
   /*title container*/

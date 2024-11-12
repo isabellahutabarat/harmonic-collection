@@ -8,6 +8,7 @@
   body {
     margin: 0;
     overflow: hidden; 
+    overflow-x: hidden;
   }
   
   /* text styling */
@@ -111,12 +112,11 @@
   .largeText {
     color: #FE0;
     font-family: "Plus Jakarta Sans";
-    font-size: 10rem;
+    font-size: 15rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
     transition: color 0.2s ease;
-    position: absolute;
   }
   
   .largeText:hover {
@@ -140,60 +140,73 @@
     overflow-x: hidden; 
     margin: 0;
     padding: 0;
+    width: 100vw;
 }
 
-.background-photo {
+.nicole-img {
     position: relative;
     width: 100vw;
-    height: 85.92vh; 
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-y: hidden;
     object-fit: cover;
 }
   
 /*playlist page*/
+.page-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3vw;
+  gap: 5vh;
+  min-height: 100vh;
+  overflow-y: auto;
+  background-color: #FE0;
+  margin-top: 10vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 0 3vw;
+}
+
+.nameText {
+  color: #000;
+  font-family: "Plus Jakarta Sans";
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  transition: color 0.2s ease;
+}
+
+.nameText:hover {
+  color: #FFF;
+}
+
+.playlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 0 3vw;
+  padding-top: 10vh;
+}
+
 .playlistText {
     color: #000;
     font-family: "Plus Jakarta Sans";
-    font-size: 0.9375rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: normal;
   }
-
-  .nameText {
-    color: #000;
-    font-family: "Plus Jakarta Sans";
-    font-size: 9rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    transition: color 0.2s ease;
-}
-
-  .nameText:hover {
-    color: #FFF;
-  }
-
-  .title-container {
-    display: flex;
-    background-color: #FE0;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100vw;
-    padding: 0 3vw;
-  }
-
-  .playlist-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100vw;
-    padding: 0 3vw;
-    padding-top: 10vh;
-  }
-
+  
   .sec1, .sec2, .sec3, .sec4 {
     flex: 1 1 22vw; 
     min-width: 22vw;
@@ -209,23 +222,25 @@
     overflow-y: auto;
     overflow-x: hidden; 
     margin: 0;
-    padding: 0;
     align-items: center;
+    padding-top: 5vh;
+    gap: 2vh;
+    width: 100vw;
 }
 
 .ans1 {
     width: 42.375rem;
-    height: 13rem;
+    height: auto;
 }
 
 .ans2 {
     width: 45.125rem;
-    height: 8.0625rem;
+    height: auto;
 }
 
 .ans3 {
     width: 38.625rem;
-    height: 8.875rem;
+    height: auto;
 }
 
 
