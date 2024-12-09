@@ -166,7 +166,6 @@ p {
   transform: rotate(180deg);
 }
 
-/* CHANGED DM */
 /* RECORD WRAPPER */
 .record--wrapper {
   position: absolute;
@@ -177,11 +176,9 @@ p {
   justify-content: flex-end;
   align-items: flex-start;
 }
-/* END CHANGED DM */
 
 /* HOME PAGE */
 
-/* CHANGED DM */
 .page--home {
   background: #f2efed;
   position: absolute;
@@ -205,7 +202,6 @@ p {
   transform: translate(-50%, -50%);
 }
 
-/* END CHANGED DM */
 
 /* INFO SPINE */
 .info--spine {
@@ -215,21 +211,20 @@ p {
 
 /* INFO SPINE CONTENT */
 .spine--content {
-  display: none;
-  background: white;
-  padding: 40px;
-  position: relative;
-  top: 30px;
-  left: 10%;
-  width: 400px;
-  border: 1px solid black;
-  transition: all 0.5s ease;
-  z-index: 2;
-  text-align: left;
-  margin: 50px;
+  visibility: hidden;
+  opacity: 0;
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  padding: 10px;
+  gap: 0.5rem; 
+  font-size: 0.8rem; 
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  width: 100%; 
+  word-wrap: break-word;
+  padding: 10px 20px 10px 10px;
 }
 
-/* CHANGED DM */
 
 #yellow-spine {
   width: 72px;
@@ -252,7 +247,22 @@ p {
   opacity: 0;
 }
 
-/* END CHANGED DM */
+#left-spine {
+  width: 72px;
+  height: 100%; 
+  transition: width 0.3s ease;
+  overflow: hidden; 
+  position: relative; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+#left-spine:hover {
+  width: 250px;
+  transform: scaleX(1);
+  transform-origin: left;
+}
 
 .smallText,
 .spine .smallText {
@@ -321,7 +331,6 @@ p {
   right: 17px;
 }
 
-/* CHANGED DM */
 
 .record {
   /* width: 72px; */
@@ -332,5 +341,3 @@ p {
 #yellow-record {
   align-self: flex-end;
 }
-
-/* Add media query for mobile */
