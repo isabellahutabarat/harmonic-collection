@@ -1,313 +1,359 @@
-
 /*GENERAL STYLING*/
 * {
-      box-sizing: border-box;
-    }
+  box-sizing: border-box;
+}
 
-    ::-webkit-scrollbar {
-      display: none;
-    }
+::-webkit-scrollbar {
+  display: none;
+}
 
-    .plus-jakarta-sans {
-      font-family: "Plus Jakarta Sans", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 500;
-      font-style: normal;
-    }
+.plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
-    .smallText {
-      font-size: 18px;
-      line-height: 22px;
-      margin: 0;
-    }
+.smallText {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+}
 
-    .text p {
-      font-size: 2.5vh;
-      line-height: 3vh;
-      margin: 0;
-    }
+.text p {
+  font-size: 2.5vh;
+  line-height: 3vh;
+  margin: 0;
+}
 
-    .mainText, .bigText {
-      font-size: 26px;
-      line-height: 30px;
-      margin: 0;
-    }
+.mainText,
+.bigText {
+  font-size: 26px;
+  line-height: 30px;
+  margin: 0;
+}
 
-    a {
-      color: black;
-      cursor: pointer;
-    }
+a {
+  color: black;
+  cursor: pointer;
+}
 
-    p {
-      margin: 0;
-    }
+p {
+  margin: 0;
+}
 
-    body {
-      left: 0;
-      top: 0;
-      margin: 0;
-      overflow: hidden;
-      background: #f2efed;
-      color: #000;
-      font-size: 18px;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-    
-    }
+body {
+  left: 0;
+  top: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #f2efed;
+  color: #000;
+  font-size: 18px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
 
-    p {
-      text-indent: 11vh;
-    }
+p {
+  text-indent: 11vh;
+}
 
-  
-    /* SPINE */
-    .spine {
-      width: 100px;
-      height: 100%;
-      position: relative;
-      top: 0;
-      left: 0vw;
-      background: white;
-      border: 1px solid black;
-      transition: transform 0.5s;
-      z-index: 4;
-      cursor: pointer;
-    }
+/* SPINE */
 
-    .spine .smallText {
-      font-size: 18px;
-      line-height: 20px;
-    }
 
-    .spine--title--top {
-      position: absolute;
-      top: 70px;
-      right: 17px;
-      text-orientation: mixed;
-      writing-mode: vertical-rl;
-    }
+.spine {
+  width: 100px;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: white;
+  border: 1px solid black;
+  transition: transform 0.5s;
+  z-index: 4;
+  cursor: pointer;
+}
 
-    .spine--middle {
-      position: absolute;
-      top: 50%;
-      text-orientation: mixed;
-      writing-mode: vertical-rl;
-      right: 17px;
-      height: 12vh;
-      width: 2vh;
-    }
 
-    .spine--title--bottom {
-      position: absolute;
-      bottom: 17px;
-      right: 17px;
-      text-orientation: mixed;
-      writing-mode: vertical-rl;
-      text-align: right;
-    }
+.spine .smallText {
+  font-size: 18px;
+  line-height: 20px;
+}
 
-    .spine--big {
-      left: 10px;
-      font-size: 90px;
-      line-height: 0.7em;
-      transform: rotate(180deg); 
-    }
+.spine--title--top {
+  position: absolute;
+  top: 70px;
+  right: 17px;
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+}
 
-    /* RECORDS RIGHT */
-    .record--issue .spine,
-    .record--issue .page--cover {
-      background: #fff700;
-    }
+.spine--middle {
+  position: absolute;
+  top: 50%;
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  right: 0px;
+  height: 12vh;
+  width: 2vh;
+}
 
-    .record--issue .blinker--live {
-      background: white;
-    }
 
-    .record--playlists .spine {
-      background: #FFFFFF;
-      border: 1px solid black;
-    }
 
-    .record--playlists .spine--title--top,
-    .record--playlists .spine--title--bottom,
-    .record--playlists .spine--middle {
-      right: 17px;
-      text-orientation: mixed;
-      writing-mode: vertical-rl;
-    }
+.spine--title--bottom {
+  position: absolute;
+  bottom: 17px;
+  right: 17px;
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  text-align: right;
+}
 
-    .record--spotify-codes .spine {
-      background: black; 
-      color: white; 
-    }
+.spine--big {
+  left: 10px;
+  font-size: 90px;
+  line-height: 0.7em;
+  transform: rotate(180deg);
+}
 
-    .record--spotify-codes .spine--title--top,
-    .record--spotify-codes .spine--title--bottom,
-    .record--spotify-codes .spine--middle {
-      color: white; 
-    }
+/* RECORDS RIGHT */
+.record--issue .spine,
+.record--issue .page--cover {
+  background: #fff700;
+}
 
-    /* RECORD */
-    .record--rcrdrsrv {
-      transform: rotate(20deg) translate(-32vh, 11.7vh); 
-      transform-origin: 100% 100%; 
-      border: 1px solid black; 
-      position: relative; 
-      z-index: 5; 
-    }
+.record--issue .blinker--live {
+  background: white;
+}
 
-    .spine--big {
-      right: auto; 
-      left: 17px; 
-      font-size: 90px; 
-      line-height: 0.7em; 
-      transform: rotate(180deg); 
-    }
+.record--playlists .spine {
+  background: #ffffff;
+  border: 1px solid black;
+}
 
-    /* RECORD WRAPPER */
-    .record--wrapper {
-      position: relative;
-      min-width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: flex-end; 
-      align-items: flex-start;
-    }
+.record--playlists .spine--title--top,
+.record--playlists .spine--title--bottom,
+.record--playlists .spine--middle {
+  right: 17px;
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+}
 
-    /* HOME PAGE */
-    .page--home {
-      background: #f2efed;
-      position: absolute;
-      top: 0;
-      width: calc(100vw - 72px);
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      overflow-x: scroll;
-      overflow-y: hidden;
-      z-index: 3;
-    }
+.record--spotify-codes .spine {
+  background: black;
+  color: white;
+}
 
-    .background-gif {
-      position: absolute; 
-      top: 50%; 
-      left: 45%;
-      width: 80%; 
-      height: auto; 
-      z-index: -1; 
-      transform: translate(-50%, -50%); 
-    }
+.record--spotify-codes .spine--title--top,
+.record--spotify-codes .spine--title--bottom,
+.record--spotify-codes .spine--middle {
+  color: white;
+}
 
-    /* INFO SPINE */
-    .info--spine {
-      position: absolute;
-      border-right: 1px solid black;
-    }
+/* RECORD */
+.record--rcrdrsrv {
+  transform: rotate(20deg) translate(-32vh, 11.7vh);
+  transform-origin: 100% 100%;
+  border: 1px solid black;
+  position: relative;
+  z-index: 5;
+}
 
-    /* INFO SPINE CONTENT */
-    .spine--content {
-      display: none; 
-      background: white;
-      padding: 40px; 
-      position: relative;
-      top: 30px;
-      left: 10%; 
-      width: 400px; 
-      border: 1px solid black; 
-      transition: all 0.5s ease; 
-      z-index: 2; 
-      text-align: left;
-      margin: 50px;
-    }
+.spine--big {
+  right: auto;
+  left: 17px;
+  font-size: 90px;
+  line-height: 0.7em;
+  transform: rotate(180deg);
+}
 
-    .spine:hover .spine--content {
-      display: block; 
-      transform: translateX(100%); 
-    }
+/* CHANGED DM */
+/* RECORD WRAPPER */
+.record--wrapper {
+  position: absolute;
+  right: 0;
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+/* END CHANGED DM */
 
-    .spine:hover {
-      transform: translateX(20px); 
-    }
+/* HOME PAGE */
+
+/* CHANGED DM */
+.page--home {
+  background: #f2efed;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  z-index: 3;
+}
+
+.background-gif {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 80%;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+/* END CHANGED DM */
+
+/* INFO SPINE */
+.info--spine {
+  position: absolute;
+  border-right: 1px solid black;
+}
+
+/* INFO SPINE CONTENT */
+.spine--content {
+  display: none;
+  background: white;
+  padding: 40px;
+  position: relative;
+  top: 30px;
+  left: 10%;
+  width: 400px;
+  border: 1px solid black;
+  transition: all 0.5s ease;
+  z-index: 2;
+  text-align: left;
+  margin: 50px;
+}
+
+.spine:hover .spine--content {
+  display: block;
+  /* transform: translateX(100%); */
+}
+
+.spine:hover {
+  /* transform: translateX(20px); */
+}
 
 /* Hover effect for right-side spines */
 .right-spine .spine:hover .spine--content {
   display: block;
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
 }
 
 .right-spine .spine:hover {
   transform: translateX(-20px);
 }
 
+/* CHANGED DM */
 
+#yellow-record {
 
-    @media only screen and (max-width: 1300px), (min-width: 1300px) and (max-height: 850px) {
-      .smallText, .spine .smallText {
-        font-size: 14px;
-        line-height: 15px;
-      }
+}
 
-      .mainText, .text p {
-        font-size: 20px;
-        line-height: 24px;
-      }
+#yellow-spine {
+  width: 72px;
+  transition: width 0.3s ease;
+}
 
-      .bigText {
-        font-size: 20px;
-        line-height: 24px;
-      }
+#yellow-spine:hover {
+  width: 200px;
+  transform: scaleX(1);
+  transform-origin: right;
+}
 
-      body {
-        overflow-x: hidden;
-        font-size: 14px;
-        line-height: 15px;
-        height: 100%;
-      }
+.individual-issue {
+  transition: opacity 0.6s ease-in;
+  opacity: 1;
+}
 
-      html, .wrapper {
-        overflow: hidden;
-        height: 100%;
-      }
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
 
-      p {
-        text-indent: 100px;
-      }
+/* END CHANGED DM */
 
-      /* SPINE */
-      .spine--middle {
-        top: 45vh;
-      }
+.smallText,
+.spine .smallText {
+  font-size: 14px;
+  line-height: 15px;
+}
 
-      .spine {
-        width: 72px;
-      }
+.mainText,
+.text p {
+  font-size: 20px;
+  line-height: 24px;
+}
 
-      .spine--title--bottom,
-      .spine--middle,
-      .spine--title--top {
-        right: 12px;
-      }
+.bigText {
+  font-size: 20px;
+  line-height: 24px;
+}
 
-      .spine--title--top {
-        top: 50px;
-      }
+body {
+  overflow-x: hidden;
+  font-size: 14px;
+  line-height: 15px;
+  height: 100%;
+}
 
-      .spine--middle {
-        right: 11px;
-      }
+html,
+.wrapper {
+  overflow: hidden;
+  height: 100%;
+}
 
-      .spine--title--bottom {
-        bottom: 12px;
-      }
+p {
+  text-indent: 100px;
+}
 
-      .spine--big {
-        font-size: 60px;
-        line-height: 0.6em;
-        right: 17px;
-      }
+/* SPINE */
+.spine--middle {
+  top: 45vh;
+}
 
-      .record {
-        width: 72px;
-        height: 100%;
-        align-items: flex-end;
-      }
-    }
+.spine {
+  width: 72px;
+}
+
+.spine--title--bottom,
+.spine--middle,
+.spine--title--top {
+  right: 12px;
+}
+
+.spine--title--top {
+  top: 50px;
+}
+
+.spine--middle {
+  right: 11px;
+}
+
+.spine--title--bottom {
+  bottom: 12px;
+}
+
+.spine--big {
+  font-size: 60px;
+  line-height: 0.6em;
+  right: 17px;
+}
+
+/* CHANGED DM */
+
+.record {
+  /* width: 72px; */
+  height: 100%;
+  align-items: flex-end;
+}
+
+#yellow-record {
+  align-self: flex-end;
+}
+
+/* Add media query for mobile */

@@ -21,7 +21,7 @@
   
   .smallText {
     position: relative; 
-    color: #000;
+    color: #fe0;
     font-family: "Plus Jakarta Sans";
     font-size: 0.875rem;
     font-weight: 600;
@@ -33,7 +33,7 @@
     position: fixed; 
     width: 100vw;
     height: 15vh;
-    background: #FFF;
+    background: #ffffff00;
     display: flex; 
     justify-content: space-between;
     align-items: center; 
@@ -74,8 +74,8 @@
 
   /* Dropdown Button */
 .dropbtn {
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff00;
+    color: #fe0;
     border: none;
     padding: 0;
   }
@@ -143,40 +143,50 @@
     width: 100vw;
 }
 
-.nicole-img {
+.nicole1-img, .nicole2-img {
     position: relative;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     overflow-y: hidden;
     object-fit: cover;
 }
   
-/*playlist page*/
+.horizontal-scroll {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+
+/*name page*/
 .page-2 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0 3vw;
-  gap: 5vh;
-  min-height: 100vh;
+  position: relative;
   overflow-y: auto;
-  background-color: #FE0;
-  margin-top: 10vh;
+  overflow-x: hidden; 
+  margin: 0;
+  padding: 0;
   width: 100vw;
-  overflow-x: hidden;
+  scroll-snap-align: start;
+  flex: 0 0 100%;
 }
 
-.title-container {
+.name-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100vw;
-  padding: 0 3vw;
+  padding: 0 5vw;
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
 }
 
 .nameText {
-  color: #000;
+  color: #FE0;
   font-family: "Plus Jakarta Sans";
   font-size: 8rem;
   font-style: normal;
@@ -189,18 +199,31 @@
   color: #FFF;
 }
 
+/*playlist page*/
+.page-3 {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  scroll-snap-align: start;
+  flex: 0 0 100%;
+}
+
 .playlist-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   width: 100vw;
-  padding: 0 3vw;
+  padding: 0 5vw;
   padding-top: 10vh;
+  position: absolute;
 }
 
 .playlistText {
-    color: #000;
+    color: #fe0;
     font-family: "Plus Jakarta Sans";
     font-size: 1rem;
     font-weight: 500;
@@ -213,9 +236,20 @@
     margin-bottom: 5vh; 
 }
 
+.nicole3-img {
+  width: 130%;
+  overflow-y: hidden;
+  object-fit: cover;
+  position: relative;
+  height: 130%;
+}
+
+
 /*question page*/
 .notes {
-    background-color: #FFF;
+    background-image: url('../entry-6/assets/blur2-3.jpg');
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     position: relative;
