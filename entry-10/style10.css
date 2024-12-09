@@ -260,7 +260,7 @@
     overflow-y: hidden;
     object-fit: cover;
     position: relative;
-    height: auto;
+    height: 100%;
     z-index: -1;
 }
 

@@ -4,22 +4,10 @@
   padding: 0;
 }
 
-::-webkit-scrollbar {
-  width: 8px; 
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #FE0; 
-  border-radius: 4px; 
-}
-
-::-webkit-scrollbar-track {
-  background: transparent; 
-}
-
 body {
   margin: 0;
-  overflow-x: hidden; 
+  overflow: hidden; 
+  overflow-x: hidden;
 }
 
 /* text styling */
@@ -32,37 +20,44 @@ body {
 
 .smallText {
   position: relative; 
-  color: #000;
+  color: #fff;
   font-family: "Plus Jakarta Sans";
   font-size: 0.875rem;
   font-weight: 600;
   padding-top: 2%;
 }
 
-.bigText {
-  font-family: "Plus Jakarta Sans";
-  font-weight: 800;
-  font-size: 6.25rem;
-  color: rgb(0, 0, 0);
-  line-height: normal;
-  z-index: 100;
-  transition: color 0.2s ease;
-}
-
-.bigText:hover {
-  color: #FE0;
-}
-
 /*header styling*/
 .header-box {
-  position: relative; 
+  position: fixed; 
   width: 100vw;
   height: 15vh;
-  background: #FFF;
+  background: #ffffff00;
   display: flex; 
   justify-content: space-between;
   align-items: center; 
   padding: 0 5vw; 
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.horizontal-scroll {
+  display: flex;
+  height: 100vh;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .leftText {
@@ -76,86 +71,212 @@ body {
   align-items: center;
 }
 
-.name-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-  height: auto;
-  padding: 0 5vw;
-  margin-top: 1.5vh;
-  margin-bottom: 5vh;
+/*photo styling*/
+ 
+/*title image page*/
+.largeText {
+  color: #FFF;
+  font-family: "Plus Jakarta Sans";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.08rem;
+  transition: color 0.2s ease;
 }
 
+.largeText:hover {
+  color: #fe0;
+}
 
-/*photo styling*/
-.pauline-top-photo {
-  position: relative;
+.playlistTitle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 5vw;
   width: 100vw;
-  height: 40vh; 
+  position: absolute;
+  top: 90%; 
+  transform: translateY(-50%);
+}
+
+.page-home {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden; 
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  object-fit: cover; 
-  object-position: center; 
-
-}
-
-.question-1-2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   width: 100vw;
-  padding: 0 5vw;
+  scroll-snap-align: start;
+  flex: 0 0 100%;
 }
 
-.q-1 {
-  height: 32.61vh;
-  object-fit: contain;
-  object-position: left;
-  filter: brightness(0.85) contrast(1.5);
+.pauline1-img, .pauline2-img, .pauline3-img {
+  width: 100%;
+  overflow-y: hidden;
+  object-fit: cover;
+  position: relative;
+  height: 100%;
+  z-index: -1;
 }
 
-.q-2 {
-  height: 34.14vh;
-  object-fit: contain;
-  object-position: right;
-  filter: brightness(0.85) contrast(1.5);
+.horizontal-scroll {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
 
-.q-3 {
-  width: 60vw;
-  height: 40.15vh;
-  object-fit: contain;
-  filter: brightness(0.85) contrast(1.5);
-  padding-bottom: 5vh;
-}
-
-
-/*group photo*/
-.friend-photos {
+/*name page*/
+.page-2 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-right: 0;
-  margin-left: 29vw;
-  padding-top: 7vh;
-  padding-bottom: 10vh;
-  gap: 2vw
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.sq1, .sq2, .sq3, .sq4 {
-  width: 16.41vw;
-  height: 33.43vh;
-  object-fit: contain;
+.nameText {
+  color: #FFF;
+  font-family: "Plus Jakarta Sans";
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: normal;
+  transition: color 0.2s ease;
+  position: absolute;
+  padding: 0 4vw;
+  writing-mode: vertical-rl;
 }
+
+.nameText:hover {
+  color: #FE0;
+}
+
+/*playlist page*/
+.page-3 {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  scroll-snap-align: start;
+  flex: 0 0 100%;
+}
+
+
+.playlist-container {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 0 3vw;
+  margin-top: 10vh;
+  padding-top: 5vh;
+  padding: 0 3vw;
+  z-index: 10;
+}
+
+.playlistText {
+  color: #FFF;
+  font-family: "Plus Jakarta Sans";
+  font-size: 0.9 rem;
+  font-weight: 500;
+  line-height: normal;
+  
+}
+
+
+.sec1, .sec2, .sec3, .sec4 {
+  flex: 1 1 22vw; 
+  min-width: 22vw;
+  margin-bottom: 5vh; 
+}
+
+
+/*question page*/
+.notes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; 
+  position: relative;
+  background-image: url('../entry-2/assets/paulineparking.jpeg');
+
+}
+
+.ans {
+  max-width: 30%;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 5;
+}
+
+
+/*media queries*/
+@media (max-width: 768px) {
+  .playlist-container {
+      flex-direction: column;
+  }
+
+
+  .sec1, .sec2, .sec3, .sec4 {
+      margin-bottom: 0; 
+      margin-left: 3vw;
+  }
+
+  .bottom-section {
+      flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+      min-width: 100%; /* Columns take full width on smaller screens */
+      padding: 0;
+  }
+
+  .largeText {
+      font-size: 2.5rem;
+  }
+
+  .playlist-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media (max-width: 830px) {
+.title-container {
+  flex-direction: column;
+}
+
+}
+
+@media (max-width: 640px) {
+.largeText {
+  font-size: 8.125rem;
+}
+}
+
+
+
+
+
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #fff;
-  color: #000;
+  background-color: #ffffff00;
+  color: #FFF;
   border: none;
   padding: 0;
 }

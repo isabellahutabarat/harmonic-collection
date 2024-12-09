@@ -145,7 +145,8 @@
 
 .yaning1-img, .yaning2-img {
     position: relative;
-    width: 115vw;
+    width: 115%;
+    height: 115%;
     margin: 0;
     padding: 0;
     overflow-y: hidden;
@@ -219,7 +220,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  padding: 0 3vw;
+  padding: 0 5vw;
   margin-top: 10vh;
   padding-top: 5vh;
   padding: 0 3vw;
@@ -245,8 +246,7 @@
   overflow-y: hidden;
   object-fit: cover;
   position: relative;
-  height: 100%;
-  z-index: -1;
+  height: 130%;
 }
 
 /*question page*/

@@ -185,11 +185,9 @@
     line-height: normal;
     transition: color 0.2s ease;
     position: absolute;
-    top: 58%;
-    padding: 0 5vw;
-    z-index: 10;
-    transform: rotate(90deg);
-    left: -15%;
+    top: 30%;
+    padding: 0 3vw;
+    writing-mode: vertical-rl;
   }
   
   .nameText:hover {
@@ -250,7 +248,7 @@
     overflow-y: hidden;
     object-fit: cover;
     position: relative;
-    height: auto;
+    height: 150%;
     z-index: -1;
 }
 
