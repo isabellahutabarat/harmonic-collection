@@ -229,30 +229,7 @@ p {
   margin: 50px;
 }
 
-.spine:hover .spine--content {
-  display: block;
-  /* transform: translateX(100%); */
-}
-
-.spine:hover {
-  /* transform: translateX(20px); */
-}
-
-/* Hover effect for right-side spines */
-.right-spine .spine:hover .spine--content {
-  display: block;
-  /* transform: translateX(-100%); */
-}
-
-.right-spine .spine:hover {
-  transform: translateX(-20px);
-}
-
 /* CHANGED DM */
-
-#yellow-record {
-
-}
 
 #yellow-spine {
   width: 72px;

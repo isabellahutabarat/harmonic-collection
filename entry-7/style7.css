@@ -21,7 +21,7 @@
   
   .smallText {
     position: relative; 
-    color: #000;
+    color: #fff;
     font-family: "Plus Jakarta Sans";
     font-size: 0.875rem;
     font-weight: 600;
@@ -33,7 +33,7 @@
     position: fixed; 
     width: 100vw;
     height: 15vh;
-    background: #FFF;
+    background: #ffffff00;
     display: flex; 
     justify-content: space-between;
     align-items: center; 
@@ -74,8 +74,8 @@
 
   /* Dropdown Button */
 .dropbtn {
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff00;
+    color: #fff;
     border: none;
     padding: 0;
   }
@@ -112,10 +112,11 @@
   .largeText {
     color: #FFF;
     font-family: "Plus Jakarta Sans";
-    font-size: 7rem;
+    font-size: 4rem;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 500;
     line-height: normal;
+    letter-spacing: 0.08rem;
     transition: color 0.2s ease;
   }
   
@@ -126,10 +127,12 @@
   .playlistTitle-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 5vw;
     width: 100vw;
-    padding: 0 3vw;
     position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
   }
 
   .page-home {
@@ -141,53 +144,66 @@
     margin: 0;
     padding: 0;
     width: 100vw;
+    scroll-snap-align: start;
+    flex: 0 0 100%;
 }
 
-.mariska-img {
-    position: relative;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
+.mariska1-img, .mariska2-img {
+    width: 100%;
     overflow-y: hidden;
     object-fit: cover;
-}
-  
-/*playlist page*/
-.page-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 3vw;
-  gap: 5vh;
-  min-height: 100vh;
-  overflow-y: auto;
-  background-color: #000;
-  margin-top: 10vh;
-  width: 100vw;
-  overflow-x: hidden;
+    object-position: center;
+    position: relative;
+    height: 100%;
+    z-index: -1;
 }
 
-.title-container {
+.horizontal-scroll {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+  
+
+/*name page*/
+.page-2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
   width: 100vw;
-  padding: 0 3vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .nameText {
   color: #FFF;
   font-family: "Plus Jakarta Sans";
-  font-size: 6rem;
-  font-style: normal;
-  font-weight: 800;
+  font-size: 5rem;
+  font-weight: 500;
   line-height: normal;
   transition: color 0.2s ease;
+  position: absolute;
+  top: 70%;
+  padding: 0 3vw;
 }
 
 .nameText:hover {
   color: #FE0;
 }
+
+/*playlist page*/
+.page-3 {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  scroll-snap-align: start;
+  flex: 0 0 100%;
+}
+
 
 .playlist-container {
   display: flex;
@@ -197,6 +213,7 @@
   width: 100vw;
   padding: 0 3vw;
   padding-top: 10vh;
+  position: absolute;
 }
 
 .playlistText {
@@ -213,9 +230,19 @@
     margin-bottom: 5vh; 
 }
 
+.mariska3-img {
+  width: 130%;
+  overflow-y: hidden;
+  object-fit: cover;
+  position: relative;
+  height: 130%;
+}
+
 /*question page*/
 .notes {
-    background-color: #FFF;
+    background-image: url('../entry-7/assets/blur2.jpg');
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -229,17 +256,17 @@
 }
 
 .ans1 {
-    width: 42.375rem;
+    width: 29.125rem;
     height: auto;
 }
 
 .ans2 {
-    width: 45.125rem;
+    width: 12.3125rem;
     height: auto;
 }
 
 .ans3 {
-    width: 38.625rem;
+    width: 37rem;
     height: auto;
 }
 

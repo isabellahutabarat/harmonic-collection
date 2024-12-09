@@ -148,6 +148,7 @@ section {
   transition: color 0.2s ease;
   position: absolute;
   padding: 0 4vw;
+  top: 20%;
   writing-mode: vertical-rl;
 }
 
